@@ -1,7 +1,22 @@
-# Final-FullStack-API
+# Client CLOUT RESTful API
 
-Full Stack Restfull API
+## Client Integration Solutions
 
-`npm install`
+### Client CLOUT has two dependancies
 
-`npm start`
+- [React Front-end](https://github.com/krymarie/Final-FullStack-FrontEnd)
+
+- [GraphQL API server with prisma and Docker](https://github.com/krymarie/GraphQL-API-Node-Server)
+
+
+### To install and serve RESTful API
+
+```
+npm install
+```
+
+```
+npm start
+```
+
+RESTful API server is now running on http://localhost:8080
