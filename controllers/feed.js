@@ -3,9 +3,9 @@ exports.getPosts = (req, res, next) => {
     posts: [
       {
         _id: "1",
-        title: "Client Name Example",
-        content: "Details here...",
-        phone: "801.555.5555",
+        title: "Mary Jane",
+        content: "Buyer seems very interested but need space to decide",
+        phone: "801-555-5555",
         insterestLevel: "3",
         creator: {
           name: "KrystalMitchell",
