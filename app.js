@@ -1,7 +1,8 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const bodyParser = require("body-parser");
 
-const feedRoutes = require('./routes/feed');
+const feedRoutes = require("./routes/feed");
+const addClientRoutes = require("./routes/addClient");
 
 const app = express();
 
@@ -9,12 +10,16 @@ const app = express();
 app.use(bodyParser.json()); // application/json
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    next();
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
 });
 
-app.use('/feed', feedRoutes);
+app.use("/feed", feedRoutes);
+app.use("/addClient", addClientRoutes);
 
 app.listen(8080);
