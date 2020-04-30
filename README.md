@@ -26,7 +26,6 @@ RESTful API server is now running on http://localhost:8080
 
 - [AllClients mapped into individual clients for seeding](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/prisma/seed.js#L11)
 - [For loop of allClients seeds each client into the DB](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/prisma/seed.js#L26)
-  )
 
 ### Front-end developed and function
 
